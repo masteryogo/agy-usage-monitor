@@ -20,19 +20,26 @@ Real-time usage dashboard for [Antigravity CLI (`agy`)](https://antigravity.goog
 
 ## Install
 
+### Via PyPI (`uv` or `pip`)
+
+```powershell
+uv tool install agy-usage-monitor
+agy-usage-monitor install
+```
+
+Or with `pip`:
+
+```powershell
+pip install agy-usage-monitor
+agy-usage-monitor install
+```
+
 ### From GitHub
 
 ```powershell
 git clone https://github.com/masteryogo/agy-usage-monitor.git
 cd agy-usage-monitor
 python install.py
-```
-
-### Via `uv` / `pip` (from GitHub)
-
-```powershell
-uv tool install git+https://github.com/masteryogo/agy-usage-monitor.git
-agy-usage-monitor install
 ```
 
 Restart `agy` (or run `/statusline enable` inside `agy`).
