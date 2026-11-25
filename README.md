@@ -2,6 +2,12 @@
 
 Real-time usage dashboard for [Antigravity CLI (`agy`)](https://antigravity.google/docs/cli/statusline) in the terminal status line, inspired by `claude-usage-monitor`.
 
+<div align="center">
+
+<img src="docs/screenshot.png" alt="agy-usage-monitor statusline screenshot" />
+
+</div>
+
 ```text
 [Gemini 4 Argon (Medium)] my-project (git, plan)  ctx ████░░░░░░░░░░ 28% (293.6k/1.0M)
   in/out: 88.2k/61.1k  last: 63.4k↑ 346↓  cache~20.9k  idle agents:1 tasks:1
@@ -49,5 +55,11 @@ python install.py uninstall
 ### Usage Report
 
 ```powershell
-python -m agy_usage_monitor.usage_report --days 7
+agy-usage-monitor report --days 7
 ```
+
+<div align="center">
+
+<img src="docs/usage-report.png" alt="agy-usage-monitor report screenshot" />
+
+</div>
