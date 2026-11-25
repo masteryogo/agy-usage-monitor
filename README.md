@@ -5,7 +5,7 @@ Real-time usage dashboard for [Antigravity CLI (`agy`)](https://antigravity.goog
 ```text
 [Gemini 4 Argon (Medium)] my-project (git, plan)  ctx ████░░░░░░░░░░ 28% (293.6k/1.0M)
   in/out: 88.2k/61.1k  last: 63.4k↑ 346↓  cache~20.9k  idle agents:1 tasks:1
-  7d: ██░░░░░░░░ 14% rst 6d11h  $0.421  4m12s  ~45.2k/day
+  G:5h: █░░░░░░░ 8% rst 4h26m  G:7d: █░░░░░░░ 3% rst 6d23h  ~$0.421  4m12s  ~45.2k/day
 ```
 
 ## Features
@@ -20,10 +20,19 @@ Real-time usage dashboard for [Antigravity CLI (`agy`)](https://antigravity.goog
 
 ## Install
 
+### From GitHub
+
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/masteryogo/agy-usage-monitor.git
 cd agy-usage-monitor
 python install.py
+```
+
+### Via `uv` / `pip` (from GitHub)
+
+```powershell
+uv tool install git+https://github.com/masteryogo/agy-usage-monitor.git
+agy-usage-monitor install
 ```
 
 Restart `agy` (or run `/statusline enable` inside `agy`).
